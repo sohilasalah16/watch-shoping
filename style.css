@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    height: 6000px;
+}
+/*start nav*/
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding:15px 30px ;
+    box-shadow: 0px 10px 15px rgba(25,25,25,0.1);
+    z-index: 999;
+}
+.navbar .nav-item .nav-link{
+    color:  rgb(5,5,5);
+    transition: all .7s ease;
+}
+.navbar .nav-item .nav-link:hover{
+    background-color: rgba(255,0,0,0.507) ;
+    font-size: 18px;
+}
+/*end nav*/
+/*start header*/
+header{
+    background-color: rab(240,240,242);
+    margin-top: 50px;
+}
+header .container .row{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+header .container .row h1{
+    font-weight: 700;
+    font-size: 80px;
+    color: rgb(11, 28, 57) ;
+} 
+header .container .row p{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.6;
+    color: rgb(33, 32, 37) ;
+    padding:30px 0 ;
+}
+header .container .row a{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: rgb(74,74,75);
+    color: rgb(255,255,255);
+    font-size:17px ;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border-radius:5px ;
+    text-transform: uppercase;
+    padding:15px 20px;
+    background: linear-gradient(to left , #4a4a4b , #4a4a4b) no-repeat;
+    background-size: 0%;
+    background-color: #ff2020;
+    transition: all 0.8s ease;
+}
+header .container .row a:hover{
+    background-size: 100%;
+}
+/*end header*/
+/*start product*/
+.new-products{
+    padding:40px 0px ;
+}
+.new-products .row  h2{
+    font-size: 30px;
+font-weight: 500px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+letter-spacing:1 ;
+}
+.new-products .boxes .box{
+    overflow: hidden;
+}
+.new-products .boxes .box img{
+    width: 100%;
+transition: all 1s ease;
+}
+.new-products .boxes .box img:hover{
+    transform: scale(1.1);
+}
+.new-products .boxes .text{
+    text-align: center;
+}
+.new-products .boxes .text a{
+    text-decoration: none;
+    outline: none;
+  font-size: 24;
+  font-weight: 700;
+    color: #444444;
+}
+.new-products .boxes .text p{
+    font-size: 18;
+  font-weight: 500;
+  color: #ff2020;
+  padding:15px 0px 20px 0px ;
+}
+/*end product*/
+/*start gallery*/
+.gallery .container-fluid{
+    padding: 0;
+    overflow:hidden;
+}
+.gallery .single-gallery{
+    margin-bottom: 30px;
+    overflow:hidden;
+}
+.gallery .single-gallery .big-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:690px ;
+}
+.gallery .single-gallery .small-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 330px;
+ }
+.gallery .row .gallery-image{
+    transform: scale(1.06);
+    transition: all 0.5s ease;
+}
+.gallery .row .gallery-image:hover{
+    filter: brightness(0.7);
+    transform: scale(1);
+    transition: all 0.5s ease; 
+}
+/*end gallery*/
+/*start card*/
+.cart .row .watch {
+  position: relative; 
+  border-bottom: 3px solid red;
+}
+.cart .row .watch i{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    opacity: 0;
+}
+.cart .row .watch:hover i{
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.cart .row .watch a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff2020;
+    padding: 20px;
+    opacity: 0;
+}
+.cart .row .watch:hover a{
+    opacity: 1;
+    transition: all 0.7s ease;
+}
+.cart .row .text{   
+text-align: center;
+}
+
+.cart .row .text h3{
+padding-top:20px ;
+}
+.cart .row .text a{
+    text-decoration: none;
+    color: #444444;
+    font-weight: 700;
+    font-size: 27px;
+  
+}
+.cart .row .text p{
+    color: #444444;  
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0 20px 0;
+}
+/*end card*/
+/*start show watch*/
+@media only screen and (min-width:576px) and (max-width:768px) {
+    .show-watch .row div img{
+        width: 250px;
+        height: 300px;
+        
+    } 
+    .show-watch .row{
+       margin: 50px 0;
+       
+    }  
+    .show-watch .row h1{
+        padding: 0 20px;
+    }
+    
+}
+.show-watch{
+    margin-top: 50px;
+    
+}
+.show-watch .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.show-watch .row h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    font-family: "Josefin Sans",sans-serif;
+    padding: 30px 0;
+}
+.show-watch .row p{
+    font-size: 17px;
+    font-weight:normal;
+    font-family: "Roboto",sans-serif;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.show-watch .row a{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(to left ,#4a4a4b,#4a4a4b)no-repeat ;
+    background-size: 0%;
+    text-transform: uppercase;
+    padding:13px 24px;
+    border-radius: 5px;
+     background-color: #ff2020;
+     transition: all 0.8s ease;
+}
+.show-watch .row a:hover{
+    background-size: 100%;
+}
+.service{
+    padding-bottom: 40px ;
+}
+.service.container{
+       padding: 10px 30px 0px 30px;
+
+}
+.service .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(gallery/vidoe_more.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: #fff;
+}
+
+.service .row i{
+    font-size: 35px;
+    margin: 25px 0;
+}
+.service .container .row h6{
+font-size: 20px;
+font-weight: 700px;
+font-family: "Roboto",sans-serif;
+margin-bottom: 12px;
+}
+.service .container .row p{
+    font-size: 16px;
+    color: #d3d1d1;
+    line-height: 30px;
+font-family: "Roboto",sans-serif;
+margin-bottom: 15px;
+}
+/*end show watch*/
+/*start footer*/
+footer{
+    padding: 40px 0;
+}
+footer .start-footer{
+    padding: 40px 0;
+margin-top:20px;
+}
+footer .start-Footer .title-footer{
+    padding-bottom: 40px;
+}
+footer .start-Footer img{
+    margin-bottom: 40px;
+}
+footer .start-Footer .title-footer h4{
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: "Roboto",sans-serif;
+}
+footer .footer-logo p{
+    color: #868c98;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 50px 0;
+}
+footer  .title-footer li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+footer  .title-footer ul li a{
+    text-decoration: none;
+    color: #868c98;
+    font-family:"Roboto",sans-serif;
+}
+footer  .title-footer ul li a:hover{
+   color: #ff2020;
+   padding-left:10px ;
+   transition: all 0.3s;
+}
+footer .bottom-Footer{
+    padding: 20px 0px;
+    margin: 20px 0px;
+}
+footer .bottom-Footer .row{
+    display: flex;
+    justify-content: space-between;
+}
+footer .bottom-Footer .row p{
+    font-size: 18px;
+    color: #888888;
+    line-height: 2;
+    font-family: "Roboto",sans-serif;
+}
+footer .bottom-Footer .row span{
+    color: #ff2020;
+    font-weight: bold;
+}
+footer .bottom-Footer .row i{
+    margin: 0 10px;
+    transition: transform 0.7s ease-in-out;
+}
+footer .bottom-Footer .row i:hover{
+    color: #ff2020;
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+/*end footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
